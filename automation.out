@@ -451,3 +451,417 @@ Session ID: 7022aaa5082de858957bc07b04495a51
 2020-05-22 12:15:02 INFO  TC001_Task:119 - ============= My Account Home Page ===========
 2020-05-22 12:15:07 INFO  TC001_Task:123 - ============= My Account Home Page ===========
 2020-05-22 12:15:24 INFO  TestBase:306 - browser closed
+2020-05-22 13:57:00 INFO  TestBase:147 - navigating to :-https://cai-staging.tools.sap
+2020-05-22 13:58:16 INFO  TC001_Task:43 - =======started verifyRegistration Test steps ===========
+2020-05-22 13:58:16 INFO  HomePageSAP:29 - =======Verify Home Page of SAP app===========
+2020-05-22 13:58:16 INFO  TC001_Task:54 - =======Ended Registration Test due to exception ===========
+2020-05-22 13:58:17 INFO  TestBase:307 - browser closed
+2020-05-22 14:01:28 INFO  TestBase:147 - navigating to :-https://cai-staging.tools.sap
+2020-05-22 14:01:37 INFO  TC001_Task:43 - =======started verifyRegistration Test steps ===========
+2020-05-22 14:01:55 INFO  HomePageSAP:29 - =======Verify Home Page of SAP app===========
+2020-05-22 14:01:55 INFO  TestBase:449 - =========== Failed to Find Element ==============
+2020-05-22 14:01:55 INFO  HomePageSAP:64 - ============= Started SignUp ===========
+2020-05-22 14:01:55 INFO  TestBase:494 - =========== Failed to Find Element-Frame/Switch to framme ==============
+2020-05-22 14:01:55 INFO  TestBase:509 - =========== Failed to Find Element-Frame/Switch to framme ==============
+2020-05-22 14:04:15 INFO  TestBase:147 - navigating to :-https://cai-staging.tools.sap
+2020-05-22 14:04:42 INFO  TC001_Task:43 - =======started verifyRegistration Test steps ===========
+2020-05-22 14:04:43 INFO  HomePageSAP:29 - =======Verify Home Page of SAP app===========
+2020-05-22 14:05:06 INFO  TestBase:307 - browser closed
+2020-05-22 14:08:25 INFO  TestBase:147 - navigating to :-https://cai-staging.tools.sap
+2020-05-22 14:08:34 INFO  TC001_Task:43 - =======started verifyRegistration Test steps ===========
+2020-05-22 14:08:35 INFO  HomePageSAP:29 - =======Verify Home Page of SAP app===========
+2020-05-22 14:08:35 INFO  HomePageSAP:64 - ============= Started SignUp ===========
+2020-05-22 14:08:35 INFO  TestBase:494 - =========== Failed to Find Element-Frame/Switch to framme ==============
+2020-05-22 14:10:47 INFO  TestBase:147 - navigating to :-https://cai-staging.tools.sap
+2020-05-22 14:10:55 INFO  TC001_Task:43 - =======started verifyRegistration Test steps ===========
+2020-05-22 14:10:56 INFO  HomePageSAP:29 - =======Verify Home Page of SAP app===========
+2020-05-22 14:10:57 INFO  HomePageSAP:64 - ============= Started SignUp ===========
+2020-05-22 14:10:57 INFO  TestBase:494 - =========== Failed to Find Element-Frame/Switch to framme ==============
+2020-05-22 14:12:31 INFO  TestBase:147 - navigating to :-https://cai-staging.tools.sap
+2020-05-22 14:12:48 INFO  TC001_Task:43 - =======started verifyRegistration Test steps ===========
+2020-05-22 14:12:51 INFO  HomePageSAP:29 - =======Verify Home Page of SAP app===========
+2020-05-22 14:12:51 INFO  HomePageSAP:64 - ============= Started SignUp ===========
+2020-05-22 14:12:51 INFO  TestBase:494 - =========== Failed to Find Element-Frame/Switch to framme ==============
+2020-05-22 14:12:51 INFO  HomePageSAP:95 - **********Signup Function aborted due to exception*******
+2020-05-22 14:12:52 INFO  TestBase:307 - browser closed
+2020-05-22 14:15:55 INFO  TestBase:147 - navigating to :-https://cai-staging.tools.sap
+2020-05-22 14:16:20 INFO  TC001_Task:43 - =======started verifyRegistration Test steps ===========
+2020-05-22 14:16:21 INFO  HomePageSAP:29 - =======Verify Home Page of SAP app===========
+2020-05-22 14:16:27 INFO  HomePageSAP:64 - ============= Started SignUp ===========
+2020-05-22 14:16:27 INFO  TestBase:494 - =========== Failed to Find Element-Frame/Switch to framme ==============
+2020-05-22 14:21:43 INFO  TestBase:147 - navigating to :-https://cai-staging.tools.sap
+2020-05-22 14:22:05 INFO  TC001_Task:43 - =======started verifyRegistration Test steps ===========
+2020-05-22 14:22:07 INFO  HomePageSAP:29 - =======Verify Home Page of SAP app===========
+2020-05-22 14:22:19 INFO  HomePageSAP:67 - ============= Started SignUp ===========
+2020-05-22 14:22:19 INFO  TestBase:494 - =========== Failed to Find Element-Frame/Switch to framme ==============
+2020-05-22 14:23:36 INFO  TestBase:147 - navigating to :-https://cai-staging.tools.sap
+2020-05-22 14:23:43 INFO  TC001_Task:43 - =======started verifyRegistration Test steps ===========
+2020-05-22 14:23:44 INFO  HomePageSAP:29 - =======Verify Home Page of SAP app===========
+2020-05-22 14:23:54 INFO  HomePageSAP:67 - ============= Started SignUp ===========
+2020-05-22 14:23:54 INFO  TestBase:494 - =========== Failed to Find Element-Frame/Switch to framme ==============
+2020-05-22 14:27:58 INFO  TestBase:307 - browser closed
+2020-05-22 14:31:43 INFO  TestBase:147 - navigating to :-https://cai-staging.tools.sap
+2020-05-22 14:31:50 INFO  TC001_Task:43 - =======started verifyRegistration Test steps ===========
+2020-05-22 14:31:51 INFO  HomePageSAP:29 - =======Verify Home Page of SAP app===========
+2020-05-22 14:32:01 INFO  HomePageSAP:67 - ============= Started SignUp ===========
+2020-05-22 14:32:01 INFO  TestBase:495 - =========== Failed to Find Element-Frame/Switch to framme ==============
+2020-05-22 14:36:11 INFO  HomePageSAP:67 - ============= Started SignUp ===========
+2020-05-22 14:36:46 INFO  TestBase:495 - =========== Failed to Find Element-Frame/Switch to framme ==============
+2020-05-22 15:50:16 INFO  TestBase:147 - navigating to :-https://cai-staging.tools.sap
+2020-05-22 15:50:28 INFO  TC001_Task:43 - =======started verifyRegistration Test steps ===========
+2020-05-22 15:50:29 INFO  HomePageSAP:29 - =======Verify Home Page of SAP app===========
+2020-05-22 15:50:29 INFO  HomePageSAP:67 - ============= Started SignUp ===========
+2020-05-22 15:50:29 INFO  HomePageSAP:98 - **********Signup Function aborted due to exception*******
+2020-05-22 15:50:31 INFO  TestBase:307 - browser closed
+2020-05-22 15:53:04 INFO  TestBase:147 - navigating to :-https://cai-staging.tools.sap
+2020-05-22 15:53:35 INFO  TC001_Task:43 - =======started verifyRegistration Test steps ===========
+2020-05-22 15:53:37 INFO  HomePageSAP:29 - =======Verify Home Page of SAP app===========
+2020-05-22 15:53:37 INFO  HomePageSAP:67 - ============= Started SignUp ===========
+2020-05-22 15:55:40 INFO  HomePageSAP:98 - **********Signup Function aborted due to exception*******
+2020-05-22 15:55:41 INFO  TestBase:307 - browser closed
+2020-05-22 15:58:31 INFO  TestBase:147 - navigating to :-https://cai-staging.tools.sap
+2020-05-22 15:58:39 INFO  TC001_Task:43 - =======started verifyRegistration Test steps ===========
+2020-05-22 15:58:40 INFO  HomePageSAP:29 - =======Verify Home Page of SAP app===========
+2020-05-22 15:58:40 INFO  HomePageSAP:67 - ============= Started SignUp ===========
+2020-05-22 15:59:33 INFO  HomePageSAP:98 - **********Signup Function aborted due to exception*******
+2020-05-22 15:59:34 INFO  TestBase:307 - browser closed
+2020-05-22 16:05:14 INFO  TestBase:147 - navigating to :-https://cai-staging.tools.sap
+2020-05-22 16:05:37 INFO  TC001_Task:43 - =======started verifyRegistration Test steps ===========
+2020-05-22 16:05:39 INFO  HomePageSAP:30 - =======Verify Home Page of SAP app===========
+2020-05-22 16:05:39 INFO  HomePageSAP:68 - ============= Started SignUp ===========
+2020-05-22 16:08:23 INFO  HomePageSAP:110 - =============Hard Assertion ===========
+2020-05-22 16:08:23 INFO  HomePageSAP:99 - **********Signup Function aborted due to exception*******
+2020-05-22 16:08:24 INFO  TestBase:307 - browser closed
+2020-05-22 16:09:34 INFO  TestBase:147 - navigating to :-https://cai-staging.tools.sap
+2020-05-22 16:09:47 INFO  TC001_Task:43 - =======started verifyRegistration Test steps ===========
+2020-05-22 16:09:48 INFO  HomePageSAP:30 - =======Verify Home Page of SAP app===========
+2020-05-22 16:09:48 INFO  HomePageSAP:68 - ============= Started SignUp ===========
+2020-05-22 16:09:52 INFO  HomePageSAP:110 - =============Hard Assertion ===========
+2020-05-22 16:09:54 INFO  TestBase:48 - =========== Failed to Find Element ==============
+2020-05-22 16:09:55 INFO  TestBase:48 - =========== Failed to Find Element ==============
+2020-05-22 16:09:55 INFO  HomePageSAP:86 - ============= Registration Form Filled  ===========
+2020-05-22 16:09:56 INFO  TestBase:17 - =========== Failed to Find Element ==============
+2020-05-22 16:09:56 INFO  HomePageSAP:92 - ============= clicked on Register button of register button  ===========
+2020-05-22 16:09:57 INFO  TestBase:307 - browser closed
+2020-05-22 16:14:07 INFO  TestBase:147 - navigating to :-https://cai-staging.tools.sap
+2020-05-22 16:14:21 INFO  TC001_Task:43 - =======started verifyRegistration Test steps ===========
+2020-05-22 16:14:22 INFO  HomePageSAP:30 - =======Verify Home Page of SAP app===========
+2020-05-22 16:14:22 INFO  HomePageSAP:71 - ============= Started SignUp ===========
+2020-05-22 16:14:26 INFO  HomePageSAP:116 - =============Hard Assertion ===========
+2020-05-22 16:14:29 INFO  TestBase:48 - =========== Failed to Find Element ==============
+2020-05-22 16:14:30 INFO  TestBase:48 - =========== Failed to Find Element ==============
+2020-05-22 16:14:30 INFO  HomePageSAP:89 - ============= Registration Form Filled  ===========
+2020-05-22 16:15:36 INFO  TestBase:17 - =========== Failed to Find Element ==============
+2020-05-22 16:17:15 INFO  HomePageSAP:71 - ============= Started SignUp ===========
+2020-05-22 16:17:15 INFO  HomePageSAP:116 - =============Hard Assertion ===========
+2020-05-22 16:17:18 INFO  TestBase:48 - =========== Failed to Find Element ==============
+2020-05-22 16:17:19 INFO  TestBase:48 - =========== Failed to Find Element ==============
+2020-05-22 16:17:19 INFO  HomePageSAP:89 - ============= Registration Form Filled  ===========
+2020-05-22 16:17:52 INFO  HomePageSAP:94 - ============= clicked on OK button  ===========
+2020-05-22 16:19:05 INFO  TestBase:147 - navigating to :-https://cai-staging.tools.sap
+2020-05-22 16:19:20 INFO  TC001_Task:43 - =======started verifyRegistration Test steps ===========
+2020-05-22 16:19:21 INFO  HomePageSAP:30 - =======Verify Home Page of SAP app===========
+2020-05-22 16:19:21 INFO  HomePageSAP:71 - ============= Started SignUp ===========
+2020-05-22 16:19:27 INFO  HomePageSAP:117 - =============Hard Assertion ===========
+2020-05-22 16:19:29 INFO  TestBase:48 - =========== Failed to Find Element ==============
+2020-05-22 16:19:30 INFO  TestBase:48 - =========== Failed to Find Element ==============
+2020-05-22 16:19:30 INFO  HomePageSAP:89 - ============= Registration Form Filled  ===========
+2020-05-22 16:19:30 INFO  HomePageSAP:106 - **********Signup Function aborted due to exception*******
+2020-05-22 16:19:32 INFO  TestBase:307 - browser closed
+2020-05-22 16:20:54 INFO  TestBase:147 - navigating to :-https://cai-staging.tools.sap
+2020-05-22 16:21:02 INFO  TC001_Task:43 - =======started verifyRegistration Test steps ===========
+2020-05-22 16:21:03 INFO  HomePageSAP:30 - =======Verify Home Page of SAP app===========
+2020-05-22 16:21:03 INFO  HomePageSAP:71 - ============= Started SignUp ===========
+2020-05-22 16:21:06 INFO  HomePageSAP:117 - =============Hard Assertion ===========
+2020-05-22 16:21:08 INFO  TestBase:49 - =========== Failed to Find Element ==============
+2020-05-22 16:21:09 INFO  TestBase:49 - =========== Failed to Find Element ==============
+2020-05-22 16:21:09 INFO  HomePageSAP:89 - ============= Registration Form Filled  ===========
+2020-05-22 16:25:55 INFO  TestBase:147 - navigating to :-https://cai-staging.tools.sap
+2020-05-22 16:26:04 INFO  TC001_Task:43 - =======started verifyRegistration Test steps ===========
+2020-05-22 16:26:05 INFO  HomePageSAP:30 - =======Verify Home Page of SAP app===========
+2020-05-22 16:26:05 INFO  HomePageSAP:71 - ============= Started SignUp ===========
+2020-05-22 16:26:15 INFO  HomePageSAP:122 - =============Hard Assertion ===========
+2020-05-22 16:26:17 INFO  TestBase:49 - =========== Failed to Find Element ==============
+2020-05-22 16:26:19 INFO  TestBase:49 - =========== Failed to Find Element ==============
+2020-05-22 16:26:19 INFO  HomePageSAP:89 - ============= Registration Form Filled  ===========
+2020-05-22 16:26:19 INFO  HomePageSAP:96 - ============= clicked on OK button  ===========
+2020-05-22 16:28:33 INFO  TestBase:147 - navigating to :-https://cai-staging.tools.sap
+2020-05-22 16:28:41 INFO  TC001_Task:43 - =======started verifyRegistration Test steps ===========
+2020-05-22 16:28:42 INFO  HomePageSAP:30 - =======Verify Home Page of SAP app===========
+2020-05-22 16:28:42 INFO  HomePageSAP:71 - ============= Started SignUp ===========
+2020-05-22 16:28:45 INFO  HomePageSAP:122 - =============Hard Assertion ===========
+2020-05-22 16:28:48 INFO  TestBase:18 - =========== Failed to Find Element ==============
+2020-05-22 16:28:49 INFO  TestBase:18 - =========== Failed to Find Element ==============
+2020-05-22 16:28:49 INFO  HomePageSAP:89 - ============= Registration Form Filled  ===========
+2020-05-22 16:28:49 INFO  HomePageSAP:96 - ============= clicked on OK button  ===========
+2020-05-22 16:30:15 INFO  TestBase:147 - navigating to :-https://cai-staging.tools.sap
+2020-05-22 16:30:23 INFO  TC001_Task:43 - =======started verifyRegistration Test steps ===========
+2020-05-22 16:30:24 INFO  HomePageSAP:30 - =======Verify Home Page of SAP app===========
+2020-05-22 16:30:24 INFO  HomePageSAP:71 - ============= Started SignUp ===========
+2020-05-22 16:30:28 INFO  HomePageSAP:122 - =============Hard Assertion ===========
+2020-05-22 16:30:29 INFO  HomePageSAP:85 - ============= Registration Form Filled  ===========
+2020-05-22 16:30:29 INFO  HomePageSAP:92 - ============= clicked on OK button  ===========
+2020-05-22 16:31:30 INFO  TestBase:147 - navigating to :-https://cai-staging.tools.sap
+2020-05-22 16:31:37 INFO  TC001_Task:43 - =======started verifyRegistration Test steps ===========
+2020-05-22 16:31:38 INFO  HomePageSAP:30 - =======Verify Home Page of SAP app===========
+2020-05-22 16:31:38 INFO  HomePageSAP:71 - ============= Started SignUp ===========
+2020-05-22 16:31:42 INFO  HomePageSAP:122 - =============Hard Assertion ===========
+2020-05-22 16:31:43 INFO  HomePageSAP:85 - ============= Registration Form Filled  ===========
+2020-05-22 16:31:43 INFO  HomePageSAP:92 - ============= clicked on OK button  ===========
+2020-05-22 16:33:31 INFO  TestBase:147 - navigating to :-https://cai-staging.tools.sap
+2020-05-22 16:33:40 INFO  TC001_Task:43 - =======started verifyRegistration Test steps ===========
+2020-05-22 16:33:41 INFO  HomePageSAP:30 - =======Verify Home Page of SAP app===========
+2020-05-22 16:33:42 INFO  HomePageSAP:71 - ============= Started SignUp ===========
+2020-05-22 16:33:53 INFO  HomePageSAP:122 - =============Hard Assertion ===========
+2020-05-22 16:33:54 INFO  HomePageSAP:85 - ============= Registration Form Filled  ===========
+2020-05-22 16:33:54 INFO  HomePageSAP:92 - ============= clicked on OK button  ===========
+2020-05-22 16:34:16 INFO  HomePageSAP:104 - ============= clicked on Register button of register button  ===========
+2020-05-22 16:34:19 INFO  TestBase:307 - browser closed
+2020-05-22 20:23:25 INFO  TestBase:307 - browser closed
+2020-05-22 20:27:40 INFO  TestBase:147 - navigating to :-https://cai-staging.tools.sap
+2020-05-22 20:28:19 INFO  TC001_Task:43 - =======started verifyRegistration Test steps ===========
+2020-05-22 20:28:26 INFO  HomePageSAP:30 - =======Verify Home Page of SAP app===========
+2020-05-22 20:28:38 INFO  HomePageSAP:71 - ============= Started SignUp ===========
+2020-05-22 20:28:43 INFO  HomePageSAP:122 - =============Hard Assertion ===========
+2020-05-22 20:28:44 INFO  HomePageSAP:85 - ============= Registration Form Filled  ===========
+2020-05-22 20:28:44 INFO  HomePageSAP:92 - ============= clicked on OK button  ===========
+2020-05-22 20:28:55 INFO  TestBase:18 - =========== Failed to Find Element ==============
+2020-05-22 20:28:55 INFO  HomePageSAP:104 - ============= clicked on Register button of register button  ===========
+2020-05-22 20:28:56 INFO  TestBase:307 - browser closed
+2020-05-22 21:26:41 INFO  TestBase:147 - navigating to :-https://cai-staging.tools.sap
+2020-05-22 21:32:21 INFO  TestBase:147 - navigating to :-https://cai-staging.tools.sap
+2020-05-22 21:33:39 INFO  TC001_Task:44 - =======started verifyRegistration Test steps ===========
+2020-05-22 21:33:41 INFO  HomePageSAP:30 - =======Verify Home Page of SAP app===========
+2020-05-22 21:33:41 INFO  HomePageSAP:69 - ============= Started SignUp ===========
+2020-05-22 21:33:44 INFO  HomePageSAP:120 - =============Hard Assertion ===========
+2020-05-22 21:33:45 INFO  HomePageSAP:83 - ============= Registration Form Filled  ===========
+2020-05-22 21:33:45 INFO  HomePageSAP:90 - ============= clicked on OK button  ===========
+2020-05-22 21:33:46 INFO  HomePageSAP:102 - ============= clicked on Register button of register button  ===========
+2020-05-22 21:33:49 INFO  TestBase:307 - browser closed
+2020-05-22 21:34:37 INFO  TestBase:147 - navigating to :-https://cai-staging.tools.sap
+2020-05-22 21:34:53 INFO  TC001_Task:45 - =======started verifyRegistration Test steps ===========
+2020-05-22 21:34:54 INFO  HomePageSAP:30 - =======Verify Home Page of SAP app===========
+2020-05-22 21:34:54 INFO  HomePageSAP:69 - ============= Started SignUp ===========
+2020-05-22 21:35:02 INFO  HomePageSAP:120 - =============Hard Assertion ===========
+2020-05-22 21:35:03 INFO  HomePageSAP:83 - ============= Registration Form Filled  ===========
+2020-05-22 21:35:04 INFO  HomePageSAP:90 - ============= clicked on OK button  ===========
+2020-05-22 21:35:05 INFO  HomePageSAP:102 - ============= clicked on Register button of register button  ===========
+2020-05-22 21:35:38 INFO  TestBase:307 - browser closed
+2020-05-22 22:24:23 INFO  TestBase:147 - navigating to :-https://cai-staging.tools.sap
+2020-05-22 22:25:58 INFO  TC001_Task:45 - =======started verifyRegistration Test steps ===========
+2020-05-22 22:26:02 INFO  HomePageSAP:30 - =======Verify Home Page of SAP app===========
+2020-05-22 22:26:05 INFO  HomePageSAP:69 - ============= Started SignUp ===========
+2020-05-22 22:26:55 INFO  HomePageSAP:109 - **********Signup Function aborted due to exception*******
+2020-05-22 22:28:34 INFO  TestBase:307 - browser closed
+2020-05-23 21:38:15 INFO  TestBase:307 - browser closed
+2020-05-23 21:38:51 INFO  TestBase:147 - navigating to :-https://cai-staging.tools.sap
+2020-05-23 21:40:37 INFO  TC001_Task:45 - =======started verifyRegistration Test steps ===========
+2020-05-23 21:40:54 INFO  HomePageSAP:30 - =======Verify Home Page of SAP app===========
+2020-05-23 21:40:55 INFO  HomePageSAP:69 - ============= Started SignUp ===========
+2020-05-23 21:41:09 INFO  HomePageSAP:120 - =============Hard Assertion ===========
+2020-05-23 21:41:10 INFO  HomePageSAP:83 - ============= Registration Form Filled  ===========
+2020-05-23 21:41:10 INFO  HomePageSAP:90 - ============= clicked on OK button  ===========
+2020-05-23 21:41:15 INFO  HomePageSAP:102 - ============= clicked on Register button of register button  ===========
+2020-05-23 21:41:29 INFO  TestBase:307 - browser closed
+2020-05-23 21:47:38 INFO  TestBase:159 - navigating to :-https://cai-staging.tools.sap
+2020-05-24 02:41:19 INFO  TestBase:159 - navigating to :-https://cai-staging.tools.sap
+2020-05-24 02:41:34 INFO  TC001_Task:45 - =======started verifyRegistration Test steps ===========
+2020-05-24 02:41:35 INFO  HomePageSAP:30 - =======Verify Home Page of SAP app===========
+2020-05-24 02:41:36 INFO  HomePageSAP:69 - ============= Started SignUp ===========
+2020-05-24 02:41:42 INFO  HomePageSAP:120 - =============Hard Assertion ===========
+2020-05-24 02:41:43 INFO  HomePageSAP:83 - ============= Registration Form Filled  ===========
+2020-05-24 02:41:44 INFO  HomePageSAP:90 - ============= clicked on OK button  ===========
+2020-05-24 02:41:44 INFO  HomePageSAP:102 - ============= clicked on Register button of register button  ===========
+2020-05-24 02:41:51 INFO  TestBase:319 - browser closed
+2020-05-24 02:45:13 INFO  TestBase:159 - navigating to :-https://cai-staging.tools.sap
+2020-05-24 02:45:21 INFO  TC001_Task:45 - =======started verifyRegistration Test steps ===========
+2020-05-24 02:45:22 INFO  HomePageSAP:30 - =======Verify Home Page of SAP app===========
+2020-05-24 02:45:22 INFO  HomePageSAP:69 - ============= Started SignUp ===========
+2020-05-24 02:45:27 INFO  HomePageSAP:120 - =============Hard Assertion ===========
+2020-05-24 02:45:27 INFO  HomePageSAP:83 - ============= Registration Form Filled  ===========
+2020-05-24 02:45:28 INFO  HomePageSAP:90 - ============= clicked on OK button  ===========
+2020-05-24 02:45:30 INFO  HomePageSAP:102 - ============= clicked on Register button of register button  ===========
+2020-05-24 02:45:41 INFO  TestBase:319 - browser closed
+2020-05-24 02:46:44 INFO  TestBase:159 - navigating to :-https://cai-staging.tools.sap
+2020-05-24 02:46:53 INFO  TC001_Task:45 - =======started verifyRegistration Test steps ===========
+2020-05-24 02:46:54 INFO  HomePageSAP:30 - =======Verify Home Page of SAP app===========
+2020-05-24 02:46:54 INFO  HomePageSAP:69 - ============= Started SignUp ===========
+2020-05-24 02:46:57 INFO  HomePageSAP:120 - =============Hard Assertion ===========
+2020-05-24 02:46:59 INFO  HomePageSAP:83 - ============= Registration Form Filled  ===========
+2020-05-24 02:46:59 INFO  HomePageSAP:90 - ============= clicked on OK button  ===========
+2020-05-24 02:46:59 INFO  HomePageSAP:102 - ============= clicked on Register button of register button  ===========
+2020-05-24 02:47:14 INFO  TestBase:319 - browser closed
+2020-05-24 02:51:31 INFO  TestBase:159 - navigating to :-https://cai-staging.tools.sap
+2020-05-24 02:51:41 INFO  TC001_Task:45 - =======started verifyRegistration Test steps ===========
+2020-05-24 02:51:42 INFO  HomePageSAP:30 - =======Verify Home Page of SAP app===========
+2020-05-24 02:51:42 INFO  HomePageSAP:69 - ============= Started SignUp ===========
+2020-05-24 02:51:53 INFO  HomePageSAP:120 - =============Hard Assertion ===========
+2020-05-24 02:51:54 INFO  HomePageSAP:83 - ============= Registration Form Filled  ===========
+2020-05-24 02:51:54 INFO  HomePageSAP:90 - ============= clicked on OK button  ===========
+2020-05-24 02:51:55 INFO  HomePageSAP:102 - ============= clicked on Register button of register button  ===========
+2020-05-24 02:52:11 INFO  TestBase:319 - browser closed
+2020-05-24 03:13:52 INFO  TestBase:159 - navigating to :-https://cai-staging.tools.sap
+2020-05-24 03:14:09 INFO  TC001_Task:45 - =======started verifyRegistration Test steps ===========
+2020-05-24 03:14:11 INFO  HomePageSAP:30 - =======Verify Home Page of SAP app===========
+2020-05-24 03:14:11 INFO  HomePageSAP:69 - ============= Started SignUp ===========
+2020-05-24 03:14:16 INFO  HomePageSAP:120 - =============Hard Assertion ===========
+2020-05-24 03:14:17 INFO  HomePageSAP:83 - ============= Registration Form Filled  ===========
+2020-05-24 03:14:17 INFO  HomePageSAP:90 - ============= clicked on OK button  ===========
+2020-05-24 03:14:17 INFO  HomePageSAP:102 - ============= clicked on Register button of register button  ===========
+2020-05-24 03:14:29 INFO  TestBase:319 - browser closed
+2020-05-24 03:34:54 INFO  TestBase:159 - navigating to :-https://cai-staging.tools.sap
+2020-05-24 03:35:11 INFO  TC001_Task:45 - =======started verifyRegistration Test steps ===========
+2020-05-24 03:35:15 INFO  HomePageSAP:30 - =======Verify Home Page of SAP app===========
+2020-05-24 03:35:16 INFO  HomePageSAP:69 - ============= Started SignUp ===========
+2020-05-24 03:35:20 INFO  HomePageSAP:120 - =============Hard Assertion ===========
+2020-05-24 03:35:21 INFO  HomePageSAP:83 - ============= Registration Form Filled  ===========
+2020-05-24 03:35:21 INFO  HomePageSAP:90 - ============= clicked on OK button  ===========
+2020-05-24 03:35:22 INFO  HomePageSAP:102 - ============= clicked on Register button of register button  ===========
+2020-05-24 03:35:30 INFO  TestBase:319 - browser closed
+2020-05-24 03:55:05 INFO  TestBase:159 - navigating to :-https://cai-staging.tools.sap
+2020-05-24 03:55:59 INFO  TC001_Task:44 - =======Url Printed from jenkins ===========
+2020-05-24 03:55:59 INFO  TC001_Task:49 - =======started verifyRegistration Test steps ===========
+2020-05-24 03:56:04 INFO  HomePageSAP:30 - =======Verify Home Page of SAP app===========
+2020-05-24 03:56:05 INFO  HomePageSAP:69 - ============= Started SignUp ===========
+2020-05-24 03:56:12 INFO  HomePageSAP:120 - =============Hard Assertion ===========
+2020-05-24 03:56:13 INFO  HomePageSAP:83 - ============= Registration Form Filled  ===========
+2020-05-24 03:56:14 INFO  HomePageSAP:90 - ============= clicked on OK button  ===========
+2020-05-24 03:56:17 INFO  HomePageSAP:102 - ============= clicked on Register button of register button  ===========
+2020-05-24 03:56:50 INFO  TestBase:319 - browser closed
+2020-05-24 04:06:29 INFO  TestBase:159 - navigating to :-https://cai-staging.tools.sap
+2020-05-24 04:06:39 INFO  TC001_Task:44 - =======Url Printed from jenkins ===========
+2020-05-24 04:06:39 INFO  TC001_Task:49 - =======started verifyRegistration Test steps ===========
+2020-05-24 04:06:40 INFO  HomePageSAP:30 - =======Verify Home Page of SAP app===========
+2020-05-24 04:06:40 INFO  HomePageSAP:69 - ============= Started SignUp ===========
+2020-05-24 04:06:44 INFO  HomePageSAP:120 - =============Hard Assertion ===========
+2020-05-24 04:06:46 INFO  HomePageSAP:83 - ============= Registration Form Filled  ===========
+2020-05-24 04:06:46 INFO  HomePageSAP:90 - ============= clicked on OK button  ===========
+2020-05-24 04:06:46 INFO  HomePageSAP:102 - ============= clicked on Register button of register button  ===========
+2020-05-24 04:07:00 INFO  TestBase:319 - browser closed
+2020-05-24 04:10:22 INFO  TestBase:159 - navigating to :-https://cai-staging.tools.sap
+2020-05-24 04:10:45 INFO  TC001_Task:44 - =======Url Printed from jenkins ===========
+2020-05-24 04:10:45 INFO  TC001_Task:49 - =======started verifyRegistration Test steps ===========
+2020-05-24 04:10:47 INFO  HomePageSAP:30 - =======Verify Home Page of SAP app===========
+2020-05-24 04:10:47 INFO  HomePageSAP:69 - ============= Started SignUp ===========
+2020-05-24 04:10:52 INFO  HomePageSAP:120 - =============Hard Assertion ===========
+2020-05-24 04:10:53 INFO  HomePageSAP:83 - ============= Registration Form Filled  ===========
+2020-05-24 04:10:53 INFO  HomePageSAP:90 - ============= clicked on OK button  ===========
+2020-05-24 04:10:53 INFO  HomePageSAP:102 - ============= clicked on Register button of register button  ===========
+2020-05-24 04:11:13 INFO  TestBase:319 - browser closed
+2020-05-24 04:15:41 INFO  TestBase:159 - navigating to :-https://cai-staging.tools.sap
+2020-05-24 04:15:52 INFO  TC001_Task:44 - =======Url Printed from jenkins ===========
+2020-05-24 04:15:52 INFO  TC001_Task:49 - =======started verifyRegistration Test steps ===========
+2020-05-24 04:16:53 INFO  TC001_Task:64 - =======Ended Registration Test due to exception ===========
+2020-05-24 04:17:16 INFO  TestBase:319 - browser closed
+2020-05-24 04:23:57 INFO  TestBase:159 - navigating to :-https://cai-staging.tools.sap
+2020-05-24 04:24:09 INFO  TC001_Task:44 - =======Url Printed from jenkins ===========
+2020-05-24 04:24:09 INFO  TC001_Task:49 - =======started verifyRegistration Test steps ===========
+2020-05-24 04:24:09 INFO  HomePageSAP:30 - =======Verify Home Page of SAP app===========
+2020-05-24 04:24:10 INFO  HomePageSAP:69 - ============= Started SignUp ===========
+2020-05-24 04:24:14 INFO  HomePageSAP:120 - =============Hard Assertion ===========
+2020-05-24 04:24:15 INFO  HomePageSAP:83 - ============= Registration Form Filled  ===========
+2020-05-24 04:24:15 INFO  HomePageSAP:90 - ============= clicked on OK button  ===========
+2020-05-24 04:24:16 INFO  HomePageSAP:102 - ============= clicked on Register button of register button  ===========
+2020-05-24 04:24:44 INFO  TestBase:319 - browser closed
+2020-05-24 18:16:14 INFO  TestBase:326 - browser closed
+2020-05-24 18:18:48 INFO  TestBase:331 - browser closed
+2020-05-24 18:19:33 INFO  TestBase:331 - browser closed
+2020-05-24 18:20:33 INFO  TestBase:331 - browser closed
+2020-05-24 18:26:45 INFO  TestBase:331 - browser closed
+2020-05-24 18:33:40 INFO  TestBase:166 - navigating to :-https://cai-staging.tools.sap
+2020-05-24 18:34:17 INFO  TC001_Task:44 - =======Url Printed from jenkins ===========
+2020-05-24 18:34:17 INFO  TC001_Task:49 - =======started verifyRegistration Test steps ===========
+2020-05-24 18:35:21 INFO  TC001_Task:64 - =======Ended Registration Test due to exception ===========
+2020-05-24 18:36:22 INFO  TestBase:331 - browser closed
+2020-05-24 19:31:40 INFO  TestBase:331 - browser closed
+2020-05-24 19:52:16 INFO  TestBase:331 - browser closed
+2020-05-24 19:54:36 INFO  TestBase:331 - browser closed
+2020-05-24 19:56:05 INFO  TestBase:331 - browser closed
+2020-05-24 19:57:21 INFO  TestBase:331 - browser closed
+2020-05-24 23:14:24 INFO  TestBase:331 - browser closed
+2020-05-24 23:14:47 INFO  TestBase:331 - browser closed
+2020-05-24 23:15:14 INFO  TestBase:331 - browser closed
+2020-05-24 23:17:10 INFO  TestBase:331 - browser closed
+2020-05-24 23:24:46 INFO  TestBase:331 - browser closed
+2020-05-24 23:28:44 INFO  TestBase:331 - browser closed
+2020-05-24 23:43:37 INFO  TestBase:331 - browser closed
+2020-05-25 00:10:17 INFO  TestBase:335 - browser closed
+2020-05-25 00:10:40 INFO  TestBase:335 - browser closed
+2020-05-25 00:13:07 INFO  TestBase:335 - browser closed
+2020-05-25 00:42:11 INFO  TestBase:181 - navigating to :-https://cai-staging.tools.sap
+2020-05-25 00:42:29 INFO  TC001_Task:45 - =======Url Printed from jenkins ===========
+2020-05-25 00:42:29 INFO  TC001_Task:50 - =======started verifyRegistration Test steps ===========
+2020-05-25 00:42:31 INFO  HomePageSAP:30 - =======Verify Home Page of SAP app===========
+2020-05-25 00:42:32 INFO  HomePageSAP:69 - ============= Started SignUp ===========
+2020-05-25 00:43:05 INFO  HomePageSAP:120 - =============Hard Assertion ===========
+2020-05-25 00:43:06 INFO  HomePageSAP:83 - ============= Registration Form Filled  ===========
+2020-05-25 00:43:06 INFO  HomePageSAP:90 - ============= clicked on OK button  ===========
+2020-05-25 00:43:07 INFO  HomePageSAP:102 - ============= clicked on Register button of register button  ===========
+2020-05-25 00:43:13 INFO  TestBase:346 - browser closed
+2020-05-25 13:11:31 INFO  TestBase:192 - navigating to :-https://cai-staging.tools.sap
+2020-05-25 13:11:51 INFO  TC001_Task:45 - =======Url Printed from jenkins ===========
+2020-05-25 13:11:51 INFO  TC001_Task:50 - =======started verifyRegistration Test steps ===========
+2020-05-25 13:11:52 INFO  HomePageSAP:30 - =======Verify Home Page of SAP app===========
+2020-05-25 13:11:52 INFO  HomePageSAP:69 - ============= Started SignUp ===========
+2020-05-25 13:11:57 INFO  HomePageSAP:120 - =============Hard Assertion ===========
+2020-05-25 13:11:58 INFO  HomePageSAP:83 - ============= Registration Form Filled  ===========
+2020-05-25 13:11:58 INFO  HomePageSAP:90 - ============= clicked on OK button  ===========
+2020-05-25 13:11:59 INFO  HomePageSAP:102 - ============= clicked on Register button of register button  ===========
+2020-05-25 13:12:09 INFO  TestBase:357 - browser closed
+2020-05-25 14:07:58 INFO  TestBase:192 - navigating to :-https://cai-staging.tools.sap
+2020-05-25 14:08:17 INFO  TC001_Task:45 - =======Url Printed from jenkins ===========
+2020-05-25 14:08:17 INFO  TC001_Task:50 - =======started verifyRegistration Test steps ===========
+2020-05-25 14:08:18 INFO  HomePageSAP:30 - =======Verify Home Page of SAP app===========
+2020-05-25 14:08:18 INFO  HomePageSAP:69 - ============= Started SignUp ===========
+2020-05-25 14:08:25 INFO  HomePageSAP:120 - =============Hard Assertion ===========
+2020-05-25 14:08:26 INFO  HomePageSAP:83 - ============= Registration Form Filled  ===========
+2020-05-25 14:08:26 INFO  HomePageSAP:90 - ============= clicked on OK button  ===========
+2020-05-25 14:08:27 INFO  HomePageSAP:102 - ============= clicked on Register button of register button  ===========
+2020-05-25 14:08:44 INFO  TestBase:357 - browser closed
+2020-05-25 14:53:10 INFO  TestBase:192 - navigating to :-https://cai-staging.tools.sap
+2020-05-25 14:53:34 INFO  TC001_Task:45 - =======Url Printed from jenkins ===========
+2020-05-25 14:53:34 INFO  TC001_Task:50 - =======started verifyRegistration Test steps ===========
+2020-05-25 14:53:35 INFO  HomePageSAP:30 - =======Verify Home Page of SAP app===========
+2020-05-25 14:53:36 INFO  HomePageSAP:69 - ============= Started SignUp ===========
+2020-05-25 14:53:39 INFO  HomePageSAP:120 - =============Hard Assertion ===========
+2020-05-25 14:53:40 INFO  HomePageSAP:83 - ============= Registration Form Filled  ===========
+2020-05-25 14:53:40 INFO  HomePageSAP:90 - ============= clicked on OK button  ===========
+2020-05-25 14:53:42 INFO  HomePageSAP:102 - ============= clicked on Register button of register button  ===========
+2020-05-25 14:53:47 INFO  TestBase:357 - browser closed
+2020-05-25 14:59:57 INFO  TestBase:357 - browser closed
+2020-05-25 15:58:38 INFO  TestBase:362 - browser closed
+2020-05-25 16:10:56 INFO  TestBase:367 - browser closed
+2020-05-25 16:40:07 INFO  TestBase:368 - browser closed
+2020-05-25 16:41:08 INFO  TestBase:367 - browser closed
+2020-05-25 16:41:42 INFO  TestBase:367 - browser closed
+2020-05-25 16:45:34 INFO  TestBase:201 - navigating to :-https://cai-staging.tools.sap
+2020-05-25 16:46:00 INFO  TC001_Task:45 - =======Url Printed from jenkins ===========
+2020-05-25 16:46:00 INFO  TC001_Task:50 - =======started verifyRegistration Test steps ===========
+2020-05-25 16:46:05 INFO  HomePageSAP:30 - =======Verify Home Page of SAP app===========
+2020-05-25 16:46:14 INFO  HomePageSAP:69 - ============= Started SignUp ===========
+2020-05-25 16:46:23 INFO  HomePageSAP:120 - =============Hard Assertion ===========
+2020-05-25 16:46:24 INFO  HomePageSAP:83 - ============= Registration Form Filled  ===========
+2020-05-25 16:46:24 INFO  HomePageSAP:90 - ============= clicked on OK button  ===========
+2020-05-25 16:46:26 INFO  HomePageSAP:102 - ============= clicked on Register button of register button  ===========
+2020-05-25 16:46:33 INFO  TestBase:367 - browser closed
+2020-05-25 16:51:44 INFO  TestBase:201 - navigating to :-https://cai-staging.tools.sap
+2020-05-25 16:52:38 INFO  TC001_Task:45 - =======Url Printed from jenkins ===========
+2020-05-25 16:52:38 INFO  TC001_Task:50 - =======started verifyRegistration Test steps ===========
+2020-05-25 16:52:41 INFO  HomePageSAP:30 - =======Verify Home Page of SAP app===========
+2020-05-25 16:52:46 INFO  HomePageSAP:69 - ============= Started SignUp ===========
+2020-05-25 16:52:51 INFO  HomePageSAP:120 - =============Hard Assertion ===========
+2020-05-25 16:52:53 INFO  HomePageSAP:83 - ============= Registration Form Filled  ===========
+2020-05-25 16:52:53 INFO  HomePageSAP:90 - ============= clicked on OK button  ===========
+2020-05-25 16:52:54 INFO  HomePageSAP:102 - ============= clicked on Register button of register button  ===========
+2020-05-25 16:53:01 INFO  TestBase:367 - browser closed
+2020-05-25 17:00:52 INFO  TestBase:201 - navigating to :-https://cai-staging.tools.sap
+2020-05-25 17:01:08 INFO  TC001_Task:45 - =======Url Printed from jenkins ===========
+2020-05-25 17:01:08 INFO  TC001_Task:50 - =======started verifyRegistration Test steps ===========
+2020-05-25 17:01:17 INFO  HomePageSAP:30 - =======Verify Home Page of SAP app===========
+2020-05-25 17:02:08 INFO  TestBase:18 - =========== Failed to Find Element ==============
+2020-05-25 17:02:08 INFO  HomePageSAP:69 - ============= Started SignUp ===========
+2020-05-25 17:02:59 INFO  HomePageSAP:109 - **********Signup Function aborted due to exception*******
+2020-05-25 17:03:18 INFO  TestBase:367 - browser closed
+2020-05-25 17:04:02 INFO  TestBase:367 - browser closed
+2020-05-25 17:04:29 INFO  TestBase:367 - browser closed
+2020-05-25 17:07:57 INFO  TestBase:367 - browser closed

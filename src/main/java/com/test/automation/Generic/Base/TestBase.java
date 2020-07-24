@@ -2,7 +2,10 @@ package com.test.automation.Generic.Base;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.lang.reflect.Method;
 import java.net.URL;
 import java.text.SimpleDateFormat;
@@ -15,13 +18,21 @@ import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.ParseException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.UnexpectedAlertBehaviour;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
@@ -41,6 +52,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import com.test.automation.ApiAutomation.service.Service;
 import com.test.automation.Generic.CommonMethods.Constants;
 import com.test.automation.Generic.CommonMethods.Excel_Reader;
+import com.test.automation.Generic.CommonMethods.ResponseParser;
 import com.test.automation.Generic.customListner.WebEventListener;
 
 /**
@@ -61,6 +73,7 @@ public class TestBase {
 	public static ExtentTest test;
 	public ITestResult result;
     protected Service service;
+    public static String EmailExt;
 	
     protected Response response;
 
@@ -80,13 +93,21 @@ public class TestBase {
 		OR.load(f);
 
 	}
+	
+	public void Setdata(String key,String Value) throws IOException {
+		loadData();		
+        OutputStream outputStream = new FileOutputStream(System.getProperty("user.dir") + Constants.Config_Filepath);          
+        OR.setProperty(key,Value);	  
+        OR.store(outputStream, null);
+	}
 
 	public void setDriver(EventFiringWebDriver driver) {
 		this.driver = driver;
 	}
 
-	public void init() throws IOException {
+	public void init() throws IOException, ParseException {
 		loadData();
+		ReadJson();
 		String log4jConfPath = "log4j.properties";
 		PropertyConfigurator.configure(log4jConfPath);
 		System.out.println(OR.getProperty("browser"));
@@ -97,6 +118,13 @@ public class TestBase {
 		}
 	}
 
+	public void initAPI() throws IOException {
+		loadData();
+		String log4jConfPath = "log4j.properties";
+		PropertyConfigurator.configure(log4jConfPath);
+		
+		
+	}
 	
 	public void selectBrowser(String browser) {
 		System.out.println(System.getProperty("os.name"));
@@ -104,19 +132,46 @@ public class TestBase {
 			if (browser.equalsIgnoreCase("chrome")) {
 				System.out.println("browser path is "+Constants.Driver_Filepath);
 				//System.out.println(System.getProperty("user.dir"));
-				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +"/drivers/chromedriver.exe");
-				driver = new ChromeDriver();
-				System.out.println("Launced Window OS -Chrome");
+				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +Constants.Driver_Filepath);
+				/*
+				 * driver = new ChromeDriver(); System.out.println("Launced Window OS -Chrome");
+				 */
+				
+				DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+				ChromeOptions options = new ChromeOptions();
+				options.addArguments("test-type");
+				
+				options.addArguments("disable-infobars");
+				//capabilities.setCapability("chrome.binary", "<Path to binary>");
+				capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+				driver = new ChromeDriver(capabilities);
 				//driver.manage().timeouts().implicitlyWait(2000, TimeUnit.MILLISECONDS);
 				// driver = new EventFiringWebDriver(dr);
 				// eventListener = new WebEventListener();
 				// driver.register(eventListener);
-			} else if (browser.equals("firefox")) {
+			} else if (browser.equalsIgnoreCase("firefox")) {
 				System.out.println(System.getProperty("user.dir"));
-				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + Constants.Driver_Filepath);
+				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + Constants.Driver_Filepath_FF);
+				DesiredCapabilities desiredCapabilities=DesiredCapabilities.firefox();
+				
+				desiredCapabilities.setPlatform(Platform.WIN8);
+				desiredCapabilities.setCapability("marionette",true);
+				
+				
+				
 				driver = new FirefoxDriver();
 				// driver = new EventFiringWebDriver(dr);
-				eventListener = new WebEventListener();
+				//eventListener = new WebEventListener();
+				// driver.register(eventListener);
+				// setDriver(driver);
+			}
+			
+			else if (browser.equalsIgnoreCase("IE")) {
+				System.out.println(System.getProperty("user.dir"));
+				System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + Constants.Driver_Filepath_IE);
+				driver = new InternetExplorerDriver();
+				// driver = new EventFiringWebDriver(dr);
+				//eventListener = new WebEventListener();
 				// driver.register(eventListener);
 				// setDriver(driver);
 			}
@@ -124,7 +179,7 @@ public class TestBase {
 			if (browser.equals("chrome")) {
 				System.out.println(System.getProperty("user.dir"));
 				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + Constants.Driver_Filepath);
-				driver = new ChromeDriver();
+				//driver = new ChromeDriver();
 				System.out.println("Launced Mac OS -Chrome");
 				driver.manage().timeouts().implicitlyWait(2000, TimeUnit.MILLISECONDS);
 				// driver = new EventFiringWebDriver(dr);
@@ -174,6 +229,7 @@ public class TestBase {
 			String reportDirectory = new File(System.getProperty("user.dir")).getAbsolutePath() + Constants.ScreenShot_Filepath;
 			File destFile = new File((String) reportDirectory + name + "_" + formater.format(calendar.getTime()) + ".png");
 			FileUtils.copyFile(scrFile, destFile);
+			
 			// This will help us to link the screen shot in testNG report
 			Reporter.log("<a href='" + destFile.getAbsolutePath() + "'> <img src='" + destFile.getAbsolutePath() + "' height='100' width='100'/> </a>");
 		} catch (IOException e) {
@@ -237,6 +293,7 @@ public class TestBase {
 	}
 
 	public String captureScreen(String fileName) {
+		String ScreenShot="API is invoked";
 		if (fileName == "") {
 			fileName = "Test";
 		}
@@ -244,6 +301,7 @@ public class TestBase {
 		Calendar calendar = Calendar.getInstance();
 		SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
         System.out.println("driver value is "+driver);
+        if(driver!=null) {
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
 		try {
@@ -257,6 +315,9 @@ public class TestBase {
 			e.printStackTrace();
 		}
 		return destFile.toString();
+		
+        }
+        return ScreenShot;
 	}
 
 	public void log(String data) {
@@ -393,48 +454,87 @@ public class TestBase {
 	}
 
 	
-	public void WaitforWebElement(WebDriver driver,WebElement element) {
-	    WebDriverWait wait = new WebDriverWait(driver,30);
-	    
-        wait.until(ExpectedConditions.visibilityOf(element));
-           
+	public void WaitforWebElement(WebDriver driver, WebElement element) {
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+
+		wait.until(ExpectedConditions.visibilityOf(element));
+
 	}
-	
+
 	public void ScrollDown() {
-		
+
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,500)");
 	}
+
 	
-	public void JavascrptClick(WebElement element) {
-		
-		JavascriptExecutor executor = (JavascriptExecutor)driver;
-		executor.executeScript("arguments[0].click();", element);
-	}
-	
-public static void SelectDdpByText(WebElement element,String text) {
-		
-		Select select =new Select(element);
-		
+
+	public static void SelectDdpByText(WebElement element, String text) {
+
+		Select select = new Select(element);
+
 		select.selectByVisibleText(text);
-		
-	}
-	
-public static void SelectDdpByValue(WebElement element,String value) {
-		
-		Select select =new Select(element);
-		
-		select.selectByValue(value);
-		
+
 	}
 
-public static void SelectDdpByIndex(WebElement element,Integer index) {
+	public static void SelectDdpByValue(WebElement element, String value) {
+
+		Select select = new Select(element);
+
+		select.selectByValue(value);
+
+	}
+
+	public static void SelectDdpByIndex(WebElement element, Integer index) {
+
+		Select select = new Select(element);
+
+		select.selectByIndex(index);
+
+	}
 	
-	Select select =new Select(element);
 	
-	select.selectByIndex(index);
+public void ReadJson()  {
+		try {
+			if(System.getProperty("System")!=null) {
+			JSONArray SystemOnevalue = ResponseParser.JsonParser(System.getProperty("System"));	    
+			
+			SystemOnevalue.forEach( emp -> parseJsonObject( (JSONObject) emp ) );
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}	
+
+public void parseJsonObject(JSONObject employee) 
+{   
+	String browser = (String) employee.get("browser");
+	String url = (String) employee.get("url");
+	String OS = (String) employee.get("OS");
+	String browserVersion = (String) employee.get("browserVersion");
+	String UserName = (String) employee.get("UserName");
+	String Password = (String) employee.get("Password");
 	
+	try {
+		if(!browser.equals(null)) {
+		Setdata("browser", browser);
+		Setdata("url", url);
+		Setdata("OS", OS);
+		Setdata("browserVersion", browserVersion);
+		Setdata("UserName", UserName);
+		Setdata("Password", Password);
+		}
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+   
 }
 
-
+	
 }

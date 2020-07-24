@@ -12,6 +12,22 @@ public class Constants {
 	
 	public static final String Driver_Filepath="/drivers/chromedriver.exe";
 	
+	public static final String Driver_Filepath_FF="/drivers/geckodriver.exe";
+	
+	public static final String Driver_Filepath_IE="/drivers/IEDriverServer.exe";
+	
 	public static final String TestData_Filepath="/resources/TestData/";
+	
+	public static final String Assert_Msg="Expected Text should be matched";
+	
+	public static final String MAIL_Ext="EmailExtension";
+	
+	public static final String JSON_FilePath="/resources/JsonFiles/";
+	
+	public static final String JSON_FileExtension=".json";
+	
+	
+	
+	
 
 }
