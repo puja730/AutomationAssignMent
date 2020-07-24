@@ -12,7 +12,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import com.test.automation.Generic.Base.TestBase;
 /**
  * 
- * @author Vivek Kumar Jha
+ * @author Puja Kumari
  *
  */
 public class WebEventListener extends TestBase implements WebDriverEventListener{

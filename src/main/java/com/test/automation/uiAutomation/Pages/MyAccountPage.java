@@ -13,23 +13,17 @@ import com.test.automation.Generic.Base.TestBase;
 
 public class MyAccountPage extends TestBase{
 	WebDriver driver;
-	static String SignupCompletionTitle="MY ACCOUNT";
-	public static final Logger log = Logger.getLogger(CreateAnAccountPage.class.getName());
 	
-	@FindBy(xpath = "//a[@title='Women']")
-	private WebElement WomenSectionTab;
+	public static final Logger log = Logger.getLogger(MyAccountPage.class.getName());
 	
-	@FindBy(xpath = "//a[@class='product_img_link']/img")
-	private List<WebElement> ProductsList;
+	@FindBy(xpath = "//span[text()='Thank you for registering with Main Website Store.']")
+	private WebElement RegistrationMessage;
 	
-	@FindBy(css ="h1.page-heading")	
-	private WebElement CreateAnAccountHeader;
-	
-	@FindBy(xpath = "//a[@title='Orders']")
-	private WebElement OrderHistory;
+	@FindBy(xpath = "//a[contains(text(),'Mobile')]")
+	private WebElement MobileTab;
 	
  public MyAccountPage(WebDriver driver) {
-	 super();
+	    super();
 		this.driver = driver;
 		
 		PageFactory.initElements(driver, this);
@@ -37,26 +31,16 @@ public class MyAccountPage extends TestBase{
  
  public void VerifyMyAccountPage() {
 		
-	 waitForElement(driver, 20, CreateAnAccountHeader);
+	 waitForElement(driver, 20, RegistrationMessage);
 	 	
-	 	Assert.assertEquals(CreateAnAccountHeader.getText(), SignupCompletionTitle,"Create An account Page Title");
+	 	Assert.assertTrue(RegistrationMessage.isDisplayed(), "Suucessful Registration message should be displayed");
 	 }
  
- public void ClickWomenTab() {
-	 WomenSectionTab.click();
+ public Mobilepage ClickOnMobile() {
 	 
+	 MobileTab.click();
+	 
+	 return new Mobilepage(driver);
  }
  
- public ProductDetailPage ClickWomenSectionProduct(WebDriver driver) {
-	 ProductsList.get(0).click();
-	 
-	 return new ProductDetailPage(driver);
- }
- 
- public OrderDetailsPage GetOrderHistory(WebDriver driver) {
-	 waitForElement(driver, 20, OrderHistory);
-	 OrderHistory.click();
-	 
-	 return new OrderDetailsPage(driver);
- }
 }

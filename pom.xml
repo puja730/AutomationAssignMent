@@ -147,7 +147,7 @@
 					</systemPropertyVariables>
 
 					<suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
+						<suiteXmlFile>testng_paraeter.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

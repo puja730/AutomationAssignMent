@@ -33,6 +33,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.BrowserType;
+import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
@@ -44,6 +46,7 @@ import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
 import com.jayway.restassured.response.Response;
 import com.relevantcodes.extentreports.ExtentReports;
@@ -53,18 +56,19 @@ import com.test.automation.ApiAutomation.service.Service;
 import com.test.automation.Generic.CommonMethods.Constants;
 import com.test.automation.Generic.CommonMethods.Excel_Reader;
 import com.test.automation.Generic.CommonMethods.ResponseParser;
+import com.test.automation.Generic.CommonMethods.WebdriverFunctions;
 import com.test.automation.Generic.customListner.WebEventListener;
 
 /**
  * 
- * @author Vivek Kumar Jha
+ * @author  Puja Kumari
  *
  */
 public class TestBase {
 
 	public static final Logger log = Logger.getLogger(TestBase.class.getName());
 
-	public WebDriver driver;
+	public RemoteWebDriver driver;
 	Excel_Reader excel;
 	// public EventFiringWebDriver driver;
 	public WebEventListener eventListener;
@@ -74,7 +78,7 @@ public class TestBase {
 	public ITestResult result;
     protected Service service;
     public static String EmailExt;
-	
+	public static String RemoteUrl;
     protected Response response;
 
 	public WebDriver getDriver() {
@@ -101,21 +105,31 @@ public class TestBase {
         OR.store(outputStream, null);
 	}
 
-	public void setDriver(EventFiringWebDriver driver) {
+	public void setDriver(RemoteWebDriver driver) {
 		this.driver = driver;
 	}
 
-	public void init() throws IOException, ParseException {
+	public void init(String browser) throws IOException, ParseException {
 		loadData();
 		ReadJson();
 		String log4jConfPath = "log4j.properties";
 		PropertyConfigurator.configure(log4jConfPath);
 		System.out.println(OR.getProperty("browser"));
 		System.out.println("condition is "+!OR.getProperty("browser").equalsIgnoreCase("Headless"));
-		if(!OR.getProperty("browser").equalsIgnoreCase("Headless")) {
-		selectBrowser(OR.getProperty("browser"));
-		getUrl(OR.getProperty("url"));
+		if(OR.getProperty("Remote").equalsIgnoreCase("false")) {
+			if (browser == null) {
+				selectBrowser(OR.getProperty("browser"));
+			} else {
+				selectBrowser(browser);
+			}
+			
 		}
+		else {
+		
+			launchapp(browser);			
+		}
+		
+		getUrl(OR.getProperty("url"));
 	}
 
 	public void initAPI() throws IOException {
@@ -379,74 +393,71 @@ public class TestBase {
 	//@Parameters("browser")
 	//@BeforeTest
 	public void launchapp(String browser) throws IOException {
-
-		if (System.getProperty("os.name").contains("Mac")) {
-			if (browser.equals("chrome")) {
-				//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/drivers/chromedriver");
+		DesiredCapabilities dc=new DesiredCapabilities();
+		
+		RemoteUrl=OR.getProperty("Remoteurl");
+		
+		System.out.println("Remote url is : "+RemoteUrl);
+		
+		if (OR.getProperty("Remoteplatform").equalsIgnoreCase("Linux")) {
+			
+			if (browser.equalsIgnoreCase("chrome")) {
+				
 				System.out.println(" Executing on CHROME");
-				DesiredCapabilities cap = DesiredCapabilities.chrome();
-				cap.setBrowserName("chrome");
-				String Node = "http://localhost:5001/wd/hub";
-				driver = new RemoteWebDriver(new URL(Node), cap);
-				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-				// Launch website
-				loadData();
-				getUrl(OR.getProperty("url"));
-			} else if (browser.equals("firefox")) {
-				//System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/drivers/geckodriver.exe");
+				dc.setCapability(CapabilityType.BROWSER_NAME, BrowserType.CHROME);	
+				dc.setCapability(CapabilityType.PLATFORM_NAME, Platform.LINUX); 
+				URL url =new URL(RemoteUrl);		
+				driver =new RemoteWebDriver(url, dc);
+				//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+				
+			} else if (browser.equalsIgnoreCase("firefox")) {
+				
 				System.out.println(" Executing on FireFox");
-				String Node = "http://172.16.123.130:5000/wd/hub";
-				DesiredCapabilities cap = DesiredCapabilities.firefox();
-				cap.setBrowserName("firefox");
-				driver = new RemoteWebDriver(new URL(Node), cap);
-				loadData();
-				getUrl(OR.getProperty("url"));
+				dc.setCapability(CapabilityType.BROWSER_NAME, BrowserType.FIREFOX);	
+				dc.setCapability(CapabilityType.PLATFORM_NAME, Platform.LINUX); 
+				URL url =new URL(RemoteUrl);		
+				driver =new RemoteWebDriver(url, dc);
+				//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+				
 			} else if (browser.equalsIgnoreCase("ie")) {
+				
 				System.out.println(" Executing on IE");
-				DesiredCapabilities cap = DesiredCapabilities.chrome();
-				cap.setBrowserName("ie");
-				String Node = "http://192.168.0.101:5555/wd/hub";
-				driver = new RemoteWebDriver(new URL(Node), cap);
+				dc.setCapability(CapabilityType.BROWSER_NAME, BrowserType.IE);	
+				dc.setCapability(CapabilityType.PLATFORM_NAME, Platform.LINUX); 
+				URL url =new URL(RemoteUrl);		
+				driver =new RemoteWebDriver(url, dc);
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-				// Launch website
-				loadData();
-				getUrl(OR.getProperty("url"));
+				
 			} else {
 				throw new IllegalArgumentException("The Browser Type is Undefined");
 			}
 		}
-		if (System.getProperty("os.name").contains("Window")) {
+		if (OR.getProperty("Remoteplatform").contains("Window")) {
 			if (browser.equals("chrome")) {
-				System.out.println(System.getProperty("user.dir"));
-				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + Constants.Driver_Filepath);
-				System.out.println(" Executing on CHROME");
-				DesiredCapabilities cap = DesiredCapabilities.chrome();
-				cap.setBrowserName("chrome");
-				String Node = "http://localhost:5555/wd/hub";
-				driver = new RemoteWebDriver(new URL(Node), cap);
+				
+				dc.setCapability(CapabilityType.BROWSER_NAME, BrowserType.CHROME);	
+				dc.setCapability(CapabilityType.PLATFORM_NAME, Platform.LINUX); 
+				URL url =new URL(RemoteUrl);		
+				driver =new RemoteWebDriver(url, dc);
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-				// Launch website
-				loadData();
-				getUrl(OR.getProperty("url"));
+								
 			} else if (browser.equals("firefox")) {
-				System.out.println(System.getProperty("user.dir"));
-				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + Constants.Driver_Filepath);
-				System.out.println(" Executing on FireFox");
-				String Node = "http://172.16.123.130:5554/wd/hub";
-				DesiredCapabilities cap = DesiredCapabilities.firefox();
-				cap.setBrowserName("firefox");
-				driver = new RemoteWebDriver(new URL(Node), cap);
-				loadData();
-				getUrl(OR.getProperty("url"));
+				
+				dc.setCapability(CapabilityType.BROWSER_NAME, BrowserType.FIREFOX);	
+				dc.setCapability(CapabilityType.PLATFORM_NAME, Platform.LINUX); 
+				URL url =new URL(RemoteUrl);		
+				driver =new RemoteWebDriver(url, dc);
+				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+				
 			} else if (browser.equalsIgnoreCase("ie")) {
 				System.out.println(" Executing on IE");
-				DesiredCapabilities cap = DesiredCapabilities.chrome();
-				cap.setBrowserName("ie");
-				String Node = "http://192.168.0.101:5555/wd/hub";
-				driver = new RemoteWebDriver(new URL(Node), cap);
+				
+				dc.setCapability(CapabilityType.BROWSER_NAME, BrowserType.IE);	
+				dc.setCapability(CapabilityType.PLATFORM_NAME, Platform.LINUX); 
+				URL url =new URL(RemoteUrl);		
+				driver =new RemoteWebDriver(url, dc);
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-				// Launch website
-				getUrl(OR.getProperty("url"));
+				
 			} else {
 				throw new IllegalArgumentException("The Browser Type is Undefined");
 			}
@@ -461,10 +472,15 @@ public class TestBase {
 
 	}
 
-	public void ScrollDown() {
+	public void ScrollDown(WebDriver driver) {
 
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0,500)");
+		js.executeScript("window.scrollBy(0,400)");
+	}
+	
+	public void ScrollUp(WebDriver driver) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,-100)");
 	}
 
 	
@@ -497,6 +513,7 @@ public class TestBase {
 public void ReadJson()  {
 		try {
 			if(System.getProperty("System")!=null) {
+			System.out.println("System File is *********** "+System.getProperty("System"));	
 			JSONArray SystemOnevalue = ResponseParser.JsonParser(System.getProperty("System"));	    
 			
 			SystemOnevalue.forEach( emp -> parseJsonObject( (JSONObject) emp ) );
@@ -519,7 +536,12 @@ public void parseJsonObject(JSONObject employee)
 	String UserName = (String) employee.get("UserName");
 	String Password = (String) employee.get("Password");
 	
+	String Remote = (String) employee.get("Remote");
+	String Remoteurl = (String) employee.get("Remoteurl");
+	String Remoteplatform = (String) employee.get("Remoteplatform");
+	
 	try {
+		
 		if(!browser.equals(null)) {
 		Setdata("browser", browser);
 		Setdata("url", url);
@@ -527,7 +549,16 @@ public void parseJsonObject(JSONObject employee)
 		Setdata("browserVersion", browserVersion);
 		Setdata("UserName", UserName);
 		Setdata("Password", Password);
+		Setdata("Remote", Remote);
+		}		
+		else if(Remote.equalsIgnoreCase("true")) {
+			
+			Setdata("Remote", Remote);
+			Setdata("Remoteurl", Remoteurl);
+			Setdata("Remoteplatform", Remoteplatform);
+			
 		}
+		
 	} catch (IOException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();

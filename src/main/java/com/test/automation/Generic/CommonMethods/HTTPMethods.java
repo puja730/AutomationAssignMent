@@ -24,8 +24,8 @@ public class HTTPMethods {
 	
 	// Get Request
 	
-public static Response GET(String urn) {
-		
+public static Response GET(String urn) {		
+	
 		System.out.println("json payload..");		
 		RestAssured.baseURI=APIConstants.BASE_URI;
 		RequestSpecification request = RestAssured.given();

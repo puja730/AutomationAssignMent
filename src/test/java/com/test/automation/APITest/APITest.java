@@ -3,12 +3,17 @@ package com.test.automation.APITest;
 import java.io.IOException;
 
 import org.apache.log4j.Logger;
+import org.json.JSONObject;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.google.gson.Gson;
+import com.jayway.restassured.RestAssured;
+import com.jayway.restassured.path.json.JsonPath;
 import com.jayway.restassured.response.Response;
+import com.jayway.restassured.specification.RequestSpecification;
 import com.test.automation.ApiAutomation.requestpojo.CreateUserReuest;
 import com.test.automation.ApiAutomation.responsepojo.CreateUserResponse;
 import com.test.automation.ApiAutomation.responsepojo.SingleUserResponse;
@@ -71,7 +76,7 @@ public class APITest extends TestBase {
 	 * }
 	 */
 
-	@Test(dataProvider = "CreateUser" ,enabled = false)
+	@Test(dataProvider = "CreateUser" ,enabled = true)
 	public void CreateUserPost(String name,String job) {
 
 		CreateUserReuest payload = CreateUser_DataFeeder.CreateUserPayload(name, job);
@@ -85,6 +90,7 @@ public class APITest extends TestBase {
 		System.out.println("Response API is job name " + responseobject.getJob());
 		System.out.println("Response API is job Id " + responseobject.getId());
 		System.out.println("Response API is job CreationDate " + responseobject.getCreatedAt());
+		
 	}
 	
 	@Test(enabled = false)
@@ -104,8 +110,47 @@ public class APITest extends TestBase {
 		System.out.println("Response API is data Email  " + responseobject.getData().get(0).getEmail());
 		
 	}	
+	//@Test
+	public void TestbyMyself() {
+		
+		CreateUserReuest createUserRequest=new CreateUserReuest();
+		createUserRequest.setJob("Automation");
+		createUserRequest.setName("Vivek2");
+		JSONObject jsonObj = new JSONObject(createUserRequest);
+		
+		RestAssured.baseURI="https://reqres.in/api/";
+		RequestSpecification request = RestAssured.given();
+		request.header("Content-Type", "application/json");
+		request.body(jsonObj.toString());
+		Response response1 = request.post("users");
+		
+		System.out.println("cookies - "+response1.getDetailedCookies());
+		System.out.println("Cookies- 2 "+response1.getDetailedCookie("__cfduid"));
+		
+		Gson gson=new Gson();
+		CreateUserResponse responseobject = (CreateUserResponse) gson.fromJson(response1.asString(), CreateUserResponse.class);
+		responseobject.getName();
+		System.out.println(responseobject.getName());
+		
+		
+	}
 	
-	
+	@Test
+	public void TestAPI() {
+		
+		RestAssured.baseURI="https://restcountries.eu/rest/v2/";
+		RequestSpecification request = RestAssured.given();
+		request.header("Content-Type", "application/json");
+		
+		Response response1 = request.get("all");
+		
+		  String json = response1.asString();
+		  JsonPath jp = new JsonPath(json);
+		  System.out.println(jp.getList("name"));
+		  System.out.println(jp.getList("capital"));
+		  System.out.println(jp.getList("currencies.code"));
+		
+	}
 	
 	@AfterClass
 	public void TearDown() {

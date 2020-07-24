@@ -4,5 +4,6 @@
     "browser": "IE",
     "browserVersion": "11",
     "UserName": "User1",
-    "Password": "Password"
+    "Password": "Password",
+     "Remote": "False"
 }

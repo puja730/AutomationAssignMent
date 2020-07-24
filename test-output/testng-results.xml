@@ -1,115 +1,236 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="2" ignored="0" total="4" passed="2">
   <reporter-output>
+    <line>
+      <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Home_Page_verification_22_07_2020_08_16_04.png'> <img src='E:\git\LiveDemo\resources\screenshot\Home_Page_verification_22_07_2020_08_16_04.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Registration_Completeion_22_07_2020_08_16_10.png'> <img src='E:\git\LiveDemo\resources\screenshot\Registration_Completeion_22_07_2020_08_16_10.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Registration_Completeion_message_22_07_2020_08_16_11.png'> <img src='E:\git\LiveDemo\resources\screenshot\Registration_Completeion_message_22_07_2020_08_16_11.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Test_22_07_2020_08_16_21.png'> <img src='E:\git\LiveDemo\resources\screenshot\Test_22_07_2020_08_16_21.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Test_22_07_2020_08_16_22.png'> <img src='E:\git\LiveDemo\resources\screenshot\Test_22_07_2020_08_16_22.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Home_Page_verification_22_07_2020_08_16_47.png'> <img src='E:\git\LiveDemo\resources\screenshot\Home_Page_verification_22_07_2020_08_16_47.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Registration_Completeion_22_07_2020_08_16_55.png'> <img src='E:\git\LiveDemo\resources\screenshot\Registration_Completeion_22_07_2020_08_16_55.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Registration_Completeion_message_22_07_2020_08_16_56.png'> <img src='E:\git\LiveDemo\resources\screenshot\Registration_Completeion_message_22_07_2020_08_16_56.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Test_22_07_2020_08_16_59.png'> <img src='E:\git\LiveDemo\resources\screenshot\Test_22_07_2020_08_16_59.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Landed to Login Page_22_07_2020_08_17_03.png'> <img src='E:\git\LiveDemo\resources\screenshot\Landed to Login Page_22_07_2020_08_17_03.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Login with valid Credential _22_07_2020_08_17_03.png'> <img src='E:\git\LiveDemo\resources\screenshot\Login with valid Credential _22_07_2020_08_17_03.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Reached to Mobile page _22_07_2020_08_17_06.png'> <img src='E:\git\LiveDemo\resources\screenshot\Reached to Mobile page _22_07_2020_08_17_06.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Added First mobile product in cart _22_07_2020_08_17_10.png'> <img src='E:\git\LiveDemo\resources\screenshot\Added First mobile product in cart _22_07_2020_08_17_10.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Proceeded to Checkout _22_07_2020_08_17_14.png'> <img src='E:\git\LiveDemo\resources\screenshot\Proceeded to Checkout _22_07_2020_08_17_14.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Selected Checkout Type default as a guest_22_07_2020_08_17_15.png'> <img src='E:\git\LiveDemo\resources\screenshot\Selected Checkout Type default as a guest_22_07_2020_08_17_15.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Entered shipping address details_22_07_2020_08_17_15.png'> <img src='E:\git\LiveDemo\resources\screenshot\Entered shipping address details_22_07_2020_08_17_15.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Test_22_07_2020_08_17_45.png'> <img src='E:\git\LiveDemo\resources\screenshot\Test_22_07_2020_08_17_45.png' height='100' width='100'/> </a>]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21692" started-at="2020-05-25T17:07:35 IST" finished-at="2020-05-25T17:07:57 IST">
+  <suite name="Suite" duration-ms="124311" started-at="2020-07-22T20:15:46 IST" finished-at="2020-07-22T20:17:51 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21692" started-at="2020-05-25T17:07:35 IST" finished-at="2020-05-25T17:07:57 IST">
-      <class name="com.test.automation.UiTest.SapRegistrationTest">
-        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.test.automation.UiTest.SapRegistrationTest@37574691]" name="setUp" is-config="true" duration-ms="20722" started-at="2020-05-25T17:07:35 IST" finished-at="2020-05-25T17:07:56 IST">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Timed out waiting for driver server to start.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'VAIO', ip: '192.168.99.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_251'
-Driver info: driver.version: InternetExplorerDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'VAIO', ip: '192.168.99.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_251'
-Driver info: driver.version: InternetExplorerDriver
-at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
-at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:221)
-at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:213)
-at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:150)
-at com.test.automation.Generic.Base.TestBase.selectBrowser(TestBase.java:172)
-at com.test.automation.Generic.Base.TestBase.init(TestBase.java:116)
-at com.test.automation.UiTest.SapRegistrationTest.setUp(SapRegistrationTest.java:35)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:767)
-at org.testng.TestRunner.run(TestRunner.java:588)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
-at org.testng.TestNG.runSuites(TestNG.java:1066)
-at org.testng.TestNG.run(TestNG.java:1034)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:14901/status] to be available after 20004 ms
-at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
-... 36 more
-Caused by: java.util.concurrent.TimeoutException
-at java.util.concurrent.FutureTask.get(FutureTask.java:205)
-at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
-at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-... 37 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+    <test name="Test" duration-ms="43493" started-at="2020-07-22T20:15:46 IST" finished-at="2020-07-22T20:16:30 IST">
+      <class name="com.test.automation.UiTest.RegistrationTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.test.automation.UiTest.RegistrationTest@782859e]" name="setUp" is-config="true" duration-ms="16719" started-at="2020-07-22T20:15:46 IST" finished-at="2020-07-22T20:16:03 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.test.automation.UiTest.SapRegistrationTest@37574691]" name="beforeMethod" is-config="true" duration-ms="-1590406677034" started-at="2020-05-25T17:07:57 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.test.automation.UiTest.RegistrationTest@782859e]" name="beforeMethod" is-config="true" duration-ms="10" started-at="2020-07-22T20:16:04 IST" finished-at="2020-07-22T20:16:04 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.automation.UiTest.RegistrationTest.CustomerRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="SapCustomerRegistration(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.automation.UiTest.SapRegistrationTest@37574691]" name="SapCustomerRegistration" duration-ms="0" started-at="2020-05-25T17:07:57 IST" data-provider="SignUpData_Sap" finished-at="2020-05-25T17:07:57 IST">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method status="PASS" signature="CustomerRegistration(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.automation.UiTest.RegistrationTest@782859e]" name="CustomerRegistration" duration-ms="17023" started-at="2020-07-22T20:16:04 IST" data-provider="Registration" finished-at="2020-07-22T20:16:21 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Puja]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Kumari ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Jha]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test0001]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Home_Page_verification_22_07_2020_08_16_04.png'> <img src='E:\git\LiveDemo\resources\screenshot\Home_Page_verification_22_07_2020_08_16_04.png' height='100' width='100'/> </a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Registration_Completeion_22_07_2020_08_16_10.png'> <img src='E:\git\LiveDemo\resources\screenshot\Registration_Completeion_22_07_2020_08_16_10.png' height='100' width='100'/> </a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Registration_Completeion_message_22_07_2020_08_16_11.png'> <img src='E:\git\LiveDemo\resources\screenshot\Registration_Completeion_message_22_07_2020_08_16_11.png' height='100' width='100'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CustomerRegistration -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.test.automation.UiTest.RegistrationTest@782859e]" name="afterMethod" is-config="true" duration-ms="347" started-at="2020-07-22T20:16:21 IST" finished-at="2020-07-22T20:16:22 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CustomerRegistration status=SUCCESS method=RegistrationTest.CustomerRegistration(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.automation.UiTest.RegistrationTest@782859e] output=<a href='E:\git\LiveDemo\resources\screenshot\Home_Page_verification_22_07_2020_08_16_04.png'> <img src='E:\git\LiveDemo\resources\screenshot\Home_Page_verification_22_07_2020_08_16_04.png' height='100' width='100'/> </a>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Test_22_07_2020_08_16_21.png'> <img src='E:\git\LiveDemo\resources\screenshot\Test_22_07_2020_08_16_21.png' height='100' width='100'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.test.automation.UiTest.RegistrationTest@782859e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-07-22T20:16:22 IST" finished-at="2020-07-22T20:16:22 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.automation.UiTest.RegistrationTest.Checkout(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="Checkout(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.automation.UiTest.RegistrationTest@782859e]" name="Checkout" duration-ms="16" started-at="2020-07-22T20:16:22 IST" data-provider="ShippingAddress" depends-on-methods="com.test.automation.UiTest.RegistrationTest.CustomerRegistration" finished-at="2020-07-22T20:16:22 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Puja]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Jha]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[901 Warrenville Road,]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Lisle]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Alaska]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[60532.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[8.266070523E9]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Timed out waiting for driver server to start.
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Account') and @class='label']"}
+  (Session info: chrome=84.0.4147.89)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'VAIO', ip: '192.168.99.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_251'
-Driver info: driver.version: InternetExplorerDriver]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:54602}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 139101f84974b6d993f24038ec8d68f1
+*** Element info: {Using=xpath, value=//span[contains(text(),'Account') and @class='label']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Account') and @class='label']"}
+  (Session info: chrome=84.0.4147.89)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'VAIO', ip: '192.168.99.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_251'
-Driver info: driver.version: InternetExplorerDriver
-at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
-at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:54602}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 139101f84974b6d993f24038ec8d68f1
+*** Element info: {Using=xpath, value=//span[contains(text(),'Account') and @class='label']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at org.openqa.selenium.ie.InternetExplorerDriver.run(InternetExplorerDriver.java:221)
-at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:213)
-at org.openqa.selenium.ie.InternetExplorerDriver.<init>(InternetExplorerDriver.java:150)
-at com.test.automation.Generic.Base.TestBase.selectBrowser(TestBase.java:172)
-at com.test.automation.Generic.Base.TestBase.init(TestBase.java:116)
-at com.test.automation.UiTest.SapRegistrationTest.setUp(SapRegistrationTest.java:35)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy13.click(Unknown Source)
+at com.test.automation.uiAutomation.Pages.HomePage.LogInLink(HomePage.java:56)
+at com.test.automation.UiTest.RegistrationTest.Checkout(RegistrationTest.java:105)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.util.ArrayList.forEach(ArrayList.java:1257)
 at org.testng.TestRunner.privateRun(TestRunner.java:767)
 at org.testng.TestRunner.run(TestRunner.java:588)
@@ -126,47 +247,181 @@ at org.testng.TestNG.run(TestNG.java:1034)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:14901/status] to be available after 20004 ms
-at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
-... 36 more
-Caused by: java.util.concurrent.TimeoutException
-at java.util.concurrent.FutureTask.get(FutureTask.java:205)
-at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
-at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-... 37 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SapCustomerRegistration -->
-        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.test.automation.UiTest.SapRegistrationTest@37574691]" name="afterMethod" is-config="true" duration-ms="-1590406677045" started-at="2020-05-25T17:07:57 IST" finished-at="1970-01-01T05:30:00 IST">
+        </test-method> <!-- Checkout -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.test.automation.UiTest.RegistrationTest@782859e]" name="afterMethod" is-config="true" duration-ms="601" started-at="2020-07-22T20:16:22 IST" finished-at="2020-07-22T20:16:22 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Checkout status=FAILURE method=RegistrationTest.Checkout(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.automation.UiTest.RegistrationTest@782859e] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
+            <line>
+              <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Test_22_07_2020_08_16_22.png'> <img src='E:\git\LiveDemo\resources\screenshot\Test_22_07_2020_08_16_22.png' height='100' width='100'/> </a>]]>
+            </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="TearDown()[pri:0, instance:com.test.automation.UiTest.SapRegistrationTest@37574691]" name="TearDown" is-config="true" duration-ms="-1590406677051" started-at="2020-05-25T17:07:57 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.test.automation.UiTest.RegistrationTest@782859e]" name="TearDown" is-config="true" duration-ms="6964" started-at="2020-07-22T20:16:22 IST" finished-at="2020-07-22T20:16:29 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method status="FAIL" signature="endTest()[pri:0, instance:com.test.automation.UiTest.SapRegistrationTest@37574691]" name="endTest" is-config="true" duration-ms="11" started-at="2020-05-25T17:07:57 IST" finished-at="2020-05-25T17:07:57 IST">
-          <exception class="java.lang.NullPointerException">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.test.automation.UiTest.RegistrationTest@782859e]" name="endTest" is-config="true" duration-ms="545" started-at="2020-07-22T20:16:29 IST" finished-at="2020-07-22T20:16:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.test.automation.UiTest.RegistrationTest -->
+    </test> <!-- Test -->
+    <test name="Test1" duration-ms="80762" started-at="2020-07-22T20:16:30 IST" finished-at="2020-07-22T20:17:51 IST">
+      <class name="com.test.automation.UiTest.RegistrationTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.test.automation.UiTest.RegistrationTest@14dd7b39]" name="setUp" is-config="true" duration-ms="17032" started-at="2020-07-22T20:16:30 IST" finished-at="2020-07-22T20:16:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.test.automation.UiTest.RegistrationTest@14dd7b39]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-07-22T20:16:47 IST" finished-at="2020-07-22T20:16:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.automation.UiTest.RegistrationTest.CustomerRegistration(java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="CustomerRegistration(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.automation.UiTest.RegistrationTest@14dd7b39]" name="CustomerRegistration" duration-ms="12040" started-at="2020-07-22T20:16:47 IST" data-provider="Registration" finished-at="2020-07-22T20:16:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Puja]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Kumari ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Jha]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test0001]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Home_Page_verification_22_07_2020_08_16_47.png'> <img src='E:\git\LiveDemo\resources\screenshot\Home_Page_verification_22_07_2020_08_16_47.png' height='100' width='100'/> </a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Registration_Completeion_22_07_2020_08_16_55.png'> <img src='E:\git\LiveDemo\resources\screenshot\Registration_Completeion_22_07_2020_08_16_55.png' height='100' width='100'/> </a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Registration_Completeion_message_22_07_2020_08_16_56.png'> <img src='E:\git\LiveDemo\resources\screenshot\Registration_Completeion_message_22_07_2020_08_16_56.png' height='100' width='100'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CustomerRegistration -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.test.automation.UiTest.RegistrationTest@14dd7b39]" name="afterMethod" is-config="true" duration-ms="149" started-at="2020-07-22T20:16:59 IST" finished-at="2020-07-22T20:16:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CustomerRegistration status=SUCCESS method=RegistrationTest.CustomerRegistration(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.automation.UiTest.RegistrationTest@14dd7b39] output=<a href='E:\git\LiveDemo\resources\screenshot\Home_Page_verification_22_07_2020_08_16_47.png'> <img src='E:\git\LiveDemo\resources\screenshot\Home_Page_verification_22_07_2020_08_16_47.png' height='100' width='100'/> </a>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Test_22_07_2020_08_16_59.png'> <img src='E:\git\LiveDemo\resources\screenshot\Test_22_07_2020_08_16_59.png' height='100' width='100'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.test.automation.UiTest.RegistrationTest@14dd7b39]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-07-22T20:16:59 IST" finished-at="2020-07-22T20:16:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.test.automation.UiTest.RegistrationTest.Checkout(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="Checkout(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.automation.UiTest.RegistrationTest@14dd7b39]" name="Checkout" duration-ms="45830" started-at="2020-07-22T20:16:59 IST" data-provider="ShippingAddress" depends-on-methods="com.test.automation.UiTest.RegistrationTest.CustomerRegistration" finished-at="2020-07-22T20:17:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Puja]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Jha]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[901 Warrenville Road,]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Lisle]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Alaska]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[60532.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[8.266070523E9]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //label[contains(text(),'Check / Money order ')]' (tried for 30 second(s) with 500 milliseconds interval)]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.relevantcodes.extentreports.Report.terminate(Report.java:412)
-at com.relevantcodes.extentreports.ExtentReports.close(ExtentReports.java:708)
-at com.test.automation.Generic.Base.TestBase.closeBrowser(TestBase.java:370)
-at com.test.automation.Generic.Base.TestBase.endTest(TestBase.java:362)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //label[contains(text(),'Check / Money order ')]' (tried for 30 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at com.test.automation.Generic.Base.TestBase.waitForElement(TestBase.java:232)
+at com.test.automation.uiAutomation.Pages.CheckoutPage.PaymentInfo(CheckoutPage.java:93)
+at com.test.automation.UiTest.RegistrationTest.Checkout(RegistrationTest.java:135)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:64)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:364)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:318)
-at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.util.ArrayList.forEach(ArrayList.java:1257)
 at org.testng.TestRunner.privateRun(TestRunner.java:767)
 at org.testng.TestRunner.run(TestRunner.java:588)
@@ -183,13 +438,86 @@ at org.testng.TestNG.run(TestNG.java:1034)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //label[contains(text(),'Check / Money order ')]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VAIO', ip: '192.168.99.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 76.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200507114007, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 11352, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.3, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2d6c2dfd-0f79-42ea-ab5e-397a37e94ffb
+*** Element info: {Using=xpath, value=//label[contains(text(),'Check / Money order ')]}
+at sun.reflect.GeneratedConstructorAccessor33.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 31 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Landed to Login Page_22_07_2020_08_17_03.png'> <img src='E:\git\LiveDemo\resources\screenshot\Landed to Login Page_22_07_2020_08_17_03.png' height='100' width='100'/> </a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Login with valid Credential _22_07_2020_08_17_03.png'> <img src='E:\git\LiveDemo\resources\screenshot\Login with valid Credential _22_07_2020_08_17_03.png' height='100' width='100'/> </a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Reached to Mobile page _22_07_2020_08_17_06.png'> <img src='E:\git\LiveDemo\resources\screenshot\Reached to Mobile page _22_07_2020_08_17_06.png' height='100' width='100'/> </a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Added First mobile product in cart _22_07_2020_08_17_10.png'> <img src='E:\git\LiveDemo\resources\screenshot\Added First mobile product in cart _22_07_2020_08_17_10.png' height='100' width='100'/> </a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Proceeded to Checkout _22_07_2020_08_17_14.png'> <img src='E:\git\LiveDemo\resources\screenshot\Proceeded to Checkout _22_07_2020_08_17_14.png' height='100' width='100'/> </a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Selected Checkout Type default as a guest_22_07_2020_08_17_15.png'> <img src='E:\git\LiveDemo\resources\screenshot\Selected Checkout Type default as a guest_22_07_2020_08_17_15.png' height='100' width='100'/> </a>]]>
+            </line>
+            <line>
+              <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Entered shipping address details_22_07_2020_08_17_15.png'> <img src='E:\git\LiveDemo\resources\screenshot\Entered shipping address details_22_07_2020_08_17_15.png' height='100' width='100'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Checkout -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.test.automation.UiTest.RegistrationTest@14dd7b39]" name="afterMethod" is-config="true" duration-ms="121" started-at="2020-07-22T20:17:45 IST" finished-at="2020-07-22T20:17:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Checkout status=FAILURE method=RegistrationTest.Checkout(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.test.automation.UiTest.RegistrationTest@14dd7b39] output=<a href='E:\git\LiveDemo\resources\screenshot\Landed to Login Page_22_07_2020_08_17_03.png'> <img src='E:\git\LiveDemo\resources\screenshot\Landed to Login Page_22_07_2020_08_17_03.png' height='100' width='100'/> </a>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<a href='E:\git\LiveDemo\resources\screenshot\Test_22_07_2020_08_17_45.png'> <img src='E:\git\LiveDemo\resources\screenshot\Test_22_07_2020_08_17_45.png' height='100' width='100'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.test.automation.UiTest.RegistrationTest@14dd7b39]" name="TearDown" is-config="true" duration-ms="5310" started-at="2020-07-22T20:17:45 IST" finished-at="2020-07-22T20:17:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.test.automation.UiTest.RegistrationTest@14dd7b39]" name="endTest" is-config="true" duration-ms="3" started-at="2020-07-22T20:17:51 IST" finished-at="2020-07-22T20:17:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-      </class> <!-- com.test.automation.UiTest.SapRegistrationTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.test.automation.UiTest.RegistrationTest -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
 </testng-results>

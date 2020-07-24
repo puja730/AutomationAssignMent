@@ -4,5 +4,6 @@
     "browser": "Chrome",
     "browserVersion": "83",
     "UserName": "User1",
-    "Password": "Password"
+    "Password": "Password",
+    "Remote": "False"
 }

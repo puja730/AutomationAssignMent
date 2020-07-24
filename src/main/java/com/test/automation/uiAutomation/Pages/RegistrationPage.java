@@ -8,57 +8,69 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.test.automation.Generic.Base.TestBase;
 
-public class LoginandRegistrationPage extends TestBase{
+public class RegistrationPage extends TestBase{
 	
 	WebDriver driver;
 
-public static final Logger log = Logger.getLogger(LoginandRegistrationPage.class.getName());
+public static final Logger log = Logger.getLogger(RegistrationPage.class.getName());
 
 
-@FindBy(id="email_create")
-private WebElement Email_textBox;
+@FindBy(id="firstname")
+private WebElement FirstName_textBox;
 
-@FindBy(css = "i[class*='icon-user left']")
-private WebElement CreateAnAccount_Btn;
+@FindBy(id = "middlename")
+private WebElement Middlename_txtbox;
 	
-@FindBy(id = "email")
-private WebElement Emaild_txt;
+@FindBy(id = "lastname")
+private WebElement lastname_txtbox;
 
-@FindBy(id="passwd")
-private WebElement Password_Txt;
+@FindBy(id="email_address")
+private WebElement email_address_Txt;
 
-@FindBy(xpath = "//i[@class='icon-lock left']")
-private WebElement SignOn_btn;
+@FindBy(id = "password")
+private WebElement password_txtbox;
 
-	public LoginandRegistrationPage(WebDriver driver) {
+@FindBy(id = "confirmation")
+private WebElement confirmpasswd_txtbox;
+
+@FindBy(xpath="//button[@title='Register']")
+private WebElement RegisterButton;
+
+	public RegistrationPage(WebDriver driver) {
 		this.driver=driver;
 	  //testBase = new TestBase();
 		PageFactory.initElements(driver, this);
 	}
 	
 	
-public void EnterEmailAddress(String EmailId) {
-   waitForElement(driver, Email_textBox, 10);
-	Email_textBox.sendKeys(EmailId);
+public MyAccountPage EnterRegistrationDetails(WebDriver driver,String Firstname,String MiddleName,String lastname,String email,String passwd,String cpasswd) {
+   
+	waitForElement(driver, FirstName_textBox, 10);
+    FirstName_textBox.sendKeys(Firstname);
+    
+    waitForElement(driver, Middlename_txtbox, 10);
+    Middlename_txtbox.sendKeys(MiddleName);
+    
+    waitForElement(driver, lastname_txtbox, 10);
+    lastname_txtbox.sendKeys(lastname);
+    
+    waitForElement(driver, email_address_Txt, 10);
+    email_address_Txt.sendKeys(email);
+    
+    waitForElement(driver, password_txtbox, 10);
+    password_txtbox.sendKeys(passwd);
+    
+    waitForElement(driver, confirmpasswd_txtbox, 10);
+    confirmpasswd_txtbox.sendKeys(cpasswd);
+    
+    waitForElement(driver, RegisterButton, 10);
+    RegisterButton.click();
 	
+    return new MyAccountPage(driver);
 }
 
-public CreateAnAccountPage ClickCreateAccount_Btn() {
+
 	
-	CreateAnAccount_Btn.click();
-	
-	return new CreateAnAccountPage(driver);
-}
-	
-public MyAccountPage Login(String Email,String pwd,WebDriver driver) {
-	
-	waitForElement(driver, 20, Emaild_txt);
-	Emaild_txt.sendKeys(Email);
-	Password_Txt.sendKeys(pwd);
-	SignOn_btn.click();
-	
-	return new MyAccountPage(driver);
-}
-	
+
 	
 }

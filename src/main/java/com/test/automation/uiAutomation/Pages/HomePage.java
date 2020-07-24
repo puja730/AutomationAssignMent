@@ -11,7 +11,7 @@ import org.testng.Reporter;
 import com.test.automation.Generic.Base.TestBase;
 /**
  * 
- * @author Vivek Kumar Jha
+ * @author Puja Kumari
  *
  */
 public class HomePage extends TestBase{
@@ -19,24 +19,43 @@ public class HomePage extends TestBase{
 	public static final Logger log = Logger.getLogger(HomePage.class.getName());
 	
 	
-	WebDriver driver;
+	 WebDriver driver;
 	
-	@FindBy(css = "a.login")
-	WebElement signIn;
+	@FindBy(xpath = "//span[contains(text(),'Account') and @class='label']")	
+	 WebElement AccountButton;
 	
+	@FindBy(xpath = "//a[@title='Register']")
+	WebElement RegisterLink;
+	
+	@FindBy(xpath = "//a[@title='Log Out']")
+	 WebElement LogOut;
+	
+	@FindBy(xpath = "//a[@title='Log In']")
+	 WebElement Login;
 	
 	public HomePage(WebDriver driver){
-		this.driver = driver;
-		//testBase = new TestBase();
+		
+		this.driver = driver;		
 		PageFactory.initElements(driver, this);
 	}
 	
 	
-	public LoginandRegistrationPage NavigateToRegistrationPage() {
-				signIn.click();
-		return new LoginandRegistrationPage(driver);	
+	public RegistrationPage NavigateToRegistrationPage(WebDriver driver) {
+		AccountButton.click();
+		RegisterLink.click();
+		return new RegistrationPage(driver);	
 	}
 	
+	public void Logout() {
+		AccountButton.click();
+		LogOut.click();
+	}
 	
+	public LoginPage LogInLink() {
+		
+		AccountButton.click();
+		Login.click();
+		return new LoginPage(driver);
+	}
 		
 }

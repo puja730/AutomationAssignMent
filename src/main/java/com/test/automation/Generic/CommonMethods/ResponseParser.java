@@ -1,17 +1,14 @@
 package com.test.automation.Generic.CommonMethods;
 
-import com.google.gson.Gson;
-import com.jayway.restassured.path.json.JsonPath;
-import com.jayway.restassured.response.Response;
-
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-import org.json.JSONObject;
 import org.json.simple.JSONArray;
 import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException; 
+import org.json.simple.parser.ParseException;
+
+import com.google.gson.Gson;
+import com.jayway.restassured.response.Response; 
 
 public class ResponseParser {	
 	
@@ -41,4 +38,21 @@ public static JSONArray JsonParser(String FileName) throws IOException, ParseExc
       return array;
 	}
 	
+/*postRequest = new HttpPost("https://qa-aresauth.emersonecologics.com/1.0/connect/token");
+			postRequest.addHeader("content-type", "application/x-www-form-urlencoded");
+			List<BasicNameValuePair> urlParameters = new ArrayList<BasicNameValuePair>();
+			urlParameters.add(new BasicNameValuePair("grant_type", "password"));
+			urlParameters.add(new BasicNameValuePair("username", userName));
+			urlParameters.add(new BasicNameValuePair("password", password));
+			urlParameters.add(new BasicNameValuePair("scope", "aresApi"));
+			urlParameters.add(new BasicNameValuePair("client_id", "AresApiTests"));
+			urlParameters.add(new BasicNameValuePair("client_secret", "I4akw7gYW5rlfgXU4wfm9J0pjkF8TOY002Dr/w7krLY="));
+
+			postRequest.setEntity(new UrlEncodedFormEntity(urlParameters));
+			response = client.execute(postRequest);
+			responseAsString = EntityUtils.toString(response.getEntity());
+			responseAsJsonObject = new JSONObject(responseAsString);
+			AUTH_TOKEN = (String) responseAsJsonObject.get("access_token");
+*/
+
 }

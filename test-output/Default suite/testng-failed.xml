@@ -3,16 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.automation.UiTest.SapRegistrationTest">
+      <class name="com.test.automation.UiTest.RegistrationTest">
         <methods>
+          <include name="SapCustomerRegistration"/>
           <include name="afterMethod"/>
-          <include name="setUp"/>
           <include name="endTest"/>
           <include name="beforeMethod"/>
-          <include name="SapCustomerRegistration"/>
+          <include name="setUp"/>
           <include name="TearDown"/>
         </methods>
-      </class> <!-- com.test.automation.UiTest.SapRegistrationTest -->
+      </class> <!-- com.test.automation.UiTest.RegistrationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
